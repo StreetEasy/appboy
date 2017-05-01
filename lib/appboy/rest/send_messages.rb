@@ -4,7 +4,7 @@ module Appboy
 
       attr_reader :app_group_id, :messages, :external_user_ids, :segment_id, :campaign_id
 
-      def initialize(app_group_id, messages: [], external_user_ids: [], campaign_id: nil, segment_id: nil, logger: nil)
+      def initialize(app_group_id:, messages: [], external_user_ids: [], campaign_id: nil, segment_id: nil, logger: nil)
         @app_group_id = app_group_id
         @messages = messages
         @external_user_ids = external_user_ids
